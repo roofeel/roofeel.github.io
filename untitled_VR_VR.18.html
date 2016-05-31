@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cores.Design</title>
+    <style type="text/css">
+      body { -ms-touch-action: none; margin: 0;}
+    </style>
+    <script type="text/javascript" src="untitled_VR_VR.18/files/KeyShotVR.js"></script>
+    <script type="text/javascript">
+      var keyshotVR;
+
+      function initKeyShotVR() {
+        var nameOfDiv = "KeyShotVR";
+        var folderName = "untitled_VR_VR.18";
+        var imageWidth = 1001;
+        var imageHeight = 646;
+        var backgroundColor = "#FFFFFF";
+        var uCount = 10;
+        var vCount = 4;
+        var uWrap = true;
+        var vWrap = false;
+        var uMouseSensitivity = -0.027778;
+        var vMouseSensitivity = 0.050000;
+        var uStartIndex = 5;
+        var vStartIndex = 0;
+        var minZoom = 1.000000;
+        var maxZoom = 1.000000;
+        var rotationDamping = 0.960000;
+        var downScaleToBrowser = false;
+        var addDownScaleGUIButton = false;
+        var addPlayGUIButton = false;
+        var imageExtension = "jpg";
+        var showLoading = true;
+        var loadingIcon = "凤凰立体-06.png"; // Set to empty string for default icon.
+        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+
+        keyshotVR = new keyshotVR(nameOfDiv,folderName,imageWidth,imageHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,addPlayGUIButton,imageExtension,showLoading,loadingIcon,allowFullscreen);
+      }
+
+      window.onload = initKeyShotVR;
+    </script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="KeyShotVR"></div> 
+  </body>
+</html>
